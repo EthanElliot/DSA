@@ -1,9 +1,4 @@
-'''linked list
-A Searching algorithm where half of the data is discared each time based
-on if the target is less or greater than
-
-Time complexity: O(log(n))
-'''
+'''linked list'''
 
 
 class Node(object):
