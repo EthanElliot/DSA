@@ -4,8 +4,6 @@ on if the target is less or greater than
 
 Time complexity: O(log(n))
 '''
-import time
-import random
 
 
 def binary_search(nums: list[int], target: int):
@@ -24,7 +22,7 @@ def binary_search(nums: list[int], target: int):
     PtrR = len(nums)-1
 
     # if pointers have swapped positions the target must not be in list
-    while PtrL < PtrR:
+    while PtrL <= PtrR:
 
         # find element between the two pointers
         PtrM = (PtrR+PtrL)//2
