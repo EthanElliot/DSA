@@ -24,6 +24,8 @@ int main(void)
     {
         printf("%d\n", list[i]);
     }
+
+    free(list);
 }
 
 void selection_sort(int *list, int size)

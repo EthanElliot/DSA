@@ -29,6 +29,8 @@ int main(void)
     {
         printf("Item was found in list at index %d\n", found);
     }
+
+    free(list);
 }
 
 int binary_search(int *list, int size, int searchvalue)
