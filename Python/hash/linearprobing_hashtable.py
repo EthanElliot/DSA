@@ -33,6 +33,12 @@ class LinearHashTable(HashTable):
             current_index = (current_index+1) % self.n_slots
         self._table[current_index] = item
 
-    def is_full(self):
+    def is_full(self) -> bool:
         '''returns true if the hashtable is full'''
         return self.n_slots == self.n_items
+
+    def delete(self, index: int) -> None:
+        '''deletes item from index in the hash table'''
+        if index > self.n_slots or index < 0:
+            raise IndexError("Index out of range")
+        self._table[index] = None
